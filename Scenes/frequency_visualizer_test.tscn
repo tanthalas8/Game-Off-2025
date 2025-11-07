@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://baphluc38nm1v"]
+
+[ext_resource type="Script" uid="uid://dlqu2if4jpr01" path="res://Scenes/frequency_visualizer_test.gd" id="1_v201u"]
+
+[node name="Frequency Visualizer Test" type="Line2D"]
+script = ExtResource("1_v201u")

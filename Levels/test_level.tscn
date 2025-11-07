@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw0pg6roe8gpb"]
+
+[ext_resource type="PackedScene" uid="uid://cr3c16kvjmoch" path="res://Player/player_ship.tscn" id="1_ormqy"]
+[ext_resource type="Texture2D" uid="uid://cb7jr0u7fi8bo" path="res://Assets/SpaceBackground.png" id="2_00vsl"]
+
+[node name="Test Level" type="Node2D"]
+texture_filter = 1
+
+[node name="Player Ship" parent="." instance=ExtResource("1_ormqy")]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+z_index = -1
+repeat_size = Vector2(960, 540)
+repeat_times = 10
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_00vsl")
